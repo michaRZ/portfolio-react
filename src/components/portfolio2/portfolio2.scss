@@ -1,0 +1,54 @@
+@import "../../global.scss";
+
+.portfolio2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include extraSmallDevice {
+        align-items: center;
+        justify-content: center;
+    }
+  
+
+    h2 {
+        font-size: 50px;
+        color: $textColor;
+        margin-bottom: 20px;
+
+        @include extraSmallDevice {
+            font-size: 28px;
+            margin: 20px 0;
+        }
+
+    }
+
+    .container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include extraSmallDevice {
+            width: 100%;
+        }
+
+
+        .item {
+            width: 125px;
+            height: 125px;
+            margin: 20px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            @include extraSmallDevice {
+                width: 4em;
+                height: 4em;
+            }
+        }
+    }
+}

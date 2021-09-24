@@ -1,0 +1,15 @@
+@import "../../global.scss";
+
+.portfolioTabs {
+    font-size: 15px;
+    margin: 0 25px;
+    padding: 5px 15px;
+    border-radius: 1em;
+    cursor: pointer;
+
+    &.active {
+        background-color: $mainColor;
+        color: white;
+        text-shadow: 1px 1px .5px rgba(51, 51, 51, 0.459);
+    }
+}

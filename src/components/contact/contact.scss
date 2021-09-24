@@ -1,0 +1,158 @@
+@import "../../global.scss";
+
+.contact {
+    background-color:white;
+    display: flex;
+
+    @include extraSmallDevice {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .left {
+        flex: 0.5;
+        background-color: $mainColor;
+
+        @include extraSmallDevice {
+            flex: 0.3;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            height: 100%;
+            padding: 0 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: whitesmoke;
+
+            @include extraSmallDevice {
+                margin-top: 10px;
+                padding: 0 20px;
+            }
+
+            h2 {
+                font-size: 30px;
+
+                @include extraSmallDevice {
+                    font-size: 20px;
+                    overflow: hidden;
+                }
+            }
+    
+            p {
+                font-size: 15px;
+                line-height: 1.5em;
+                padding: 10px 0;
+                text-align: center;
+
+                @include extraSmallDevice {
+                    font-size: 12px;
+                    padding: 8px;
+                    overflow: hidden;
+                }
+            }
+
+            .socials {
+                margin: 10px 0;
+
+                @include extraSmallDevice {
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                }
+
+                a {
+                    padding: 0 10px;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $textColor;
+
+        @include extraSmallDevice {
+            flex: 0.6;
+            margin-top: -30px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        h2 {
+            font-size: 30px;
+
+            @include extraSmallDevice {
+                font-size: 28px;
+                overflow: hidden;
+            }
+        }
+    
+        form {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //justify-content: space-around;
+
+            @include extraSmallDevice {
+                width: 100%;
+                height: 100%;
+            }
+    
+            input {
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+                margin: 15px 0;
+
+                @include extraSmallDevice {
+                    margin: 10px 0;
+                }
+            }
+    
+            textarea {
+                width: 300px;
+                height: 120px;
+                font-size: 14px;
+                margin: 15px 0;
+
+                @include extraSmallDevice {
+                    height: 200px;
+                    margin: 10px 0;
+                }
+            }
+    
+            button {
+                width: 150px;
+                height: 30px;
+                background-color: $mainColor;
+                color: whitesmoke;
+                border: none;
+                border-radius: 15px;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                cursor: pointer;
+
+                @include extraSmallDevice {
+                    width: 300px;
+                    height: 40px;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+    
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
